@@ -14,8 +14,10 @@ body{
 }
 h1, h2, h3{
 	font-family: 'Rubik', sans-serif;
-	color: #361449;
 	font-weight:bold;
+	background: -webkit-linear-gradient( left,#390C88,#B122E1);
+  	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 p{
 	line-height: 1.8;
@@ -72,6 +74,9 @@ header{
 .linkStyle:hover:before{
 	visibility: visible;
 	transform: scaleX(1);
+}
+.introContainer, .playingRingette, .contactContainer, .address{
+	max-width: 1500px;
 }
 .introContainer{
 	box-shadow:0 4px 2px -2px #ddd;
@@ -306,8 +311,20 @@ input[type=text].check-error , input[type=password].check-error , input[type=ema
 iframe{
 	max-width: 100%;
 }
+.otherLinks{
+	font-weight:bold;
+	background: -webkit-linear-gradient( left,#390C88,#B122E1);
+  	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+/********************************************
+MEDIA QUERIES
+********************************************/
 
 @media(max-width:600px){
+	.introContainer{
+		margin: 40px auto;
+	}
 	.desktopImg{
 		display:none;
 	}
@@ -334,6 +351,9 @@ iframe{
 	}
 	.links{
 		display: none;
+	}
+	.playingRingette, .contactForm, .address{
+		margin: 20px auto;
 	}
 }
 
